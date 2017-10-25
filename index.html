@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="angularApp">
+<html ng-app = "angularApp">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,16 +29,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
   <script src = "//code.angularjs.org/1.6.4/angular-cookies.js"></script>
+  
   <script src="html2canvas/base64.js"></script>
   <script src="html2canvas/canvas2image.js"></script>
   <script src="html2canvas/html2canvas.js"></script>
   <script src="html2canvas/jquery.plugin.html2canvas.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app1.js"></script>
 </head>
-<body>
+<body ng-controller = "Home">
 
+  <form method="POST" enctype="multipart/form-data" id="myForm">
+    <input type="hidden" name="img_val" id="img_val" value="" />
+    <!--<input type="submit" value="Take a Screenshot" onclick="capture();" />-->
+  </form>
   <div id="targetDiv">
-    <div id="secondary div">
+    <div id="primaryDiv">
     <h1>This is to be screenshot</h1>
     <p>This one is also Captured</p>
     <h1>This is to be screenshot</h1>
@@ -72,11 +77,47 @@
     <h1>This is to be screenshot</h1>
     <p>This one is also Captured</p>
   </div>
-
-
+  <br/>
+  <div id="secondayDiv" style="background-color: #32CD32;">
+    <h1>This one is second Div</h1>
+    <h1>This one is second Div</h1>
+    <h1>This one is second Div</h1>
   </div>
- 
-  <input onclick="captureDiv();" type="submit" value="Take Screenshot Of Div" /> 
-  
+  <br/>
+  <div id="tertionaryDiv" style="background-color: #00FFFF;">
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+    <h1>This is to be screenshot</h1>
+    <p>This one is also Captured</p>
+  </div>
+  </div>
 </body>
 </html>
